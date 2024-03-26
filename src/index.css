@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #091D2A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    background-color: #091D2A;
+    height: 90vh;
+    min-height: 500px;
+    width: 95vw;
+    display: flex;
+}
+
+/* Navigation Panel*/
+
+nav {
+  background-color: #091D2A;
+  color: #F5F5F5;
+  min-width: 20rem;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+.user-greeting {
+  font-size: 1.5rem;
+  margin-top: 6rem;
+}
+
+.stats {
+  font-size: 1.5rem;;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.stat {
+    padding: 3px;
+}
+
+.start-btn, .sign-in-btn {
+    height: 50px;
+    width: 150px;
+    border: none;
+    
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+} 
+
+.start-btn {
+  position: absolute;
+  top: 12rem;
+  left: 26%;
+  border-radius: 6px;
+}
+
+.sign-in-btn {
+    background-color: #FF5733;
+    border-radius: 1px;
+    width: 100%;
+    height:4rem;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    opacity: 75%;
+}
+
+.play, .leaderboard {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  opacity: 60%;
+  cursor: pointer;
+  width: 90%;
+  text-align: right;
+}
+
+.highlight {
+  opacity: 100%;
+}
+
+.play {
+  position: absolute;
+  bottom: 12rem;
+  left: 0%;
+}
+
+.leaderboard {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10rem;
+  left: 0%;
+  padding-bottom: 1rem;  
+  
+}
+
+.leaderboard::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: -1rem;
+  height: 4px;
+  width: 90%;
+  background: linear-gradient(90deg, #5035FF, #FF5733);
+}
+
+/* Game Panel */
+
+.game {
+  background-color: #123A54;
+  color: #F5F5F5;
+  flex-grow: 1;
+  height: 100%;
+  text-align: center;
+  padding: 50px;
+  padding-top: 12rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 5rem;
+    text-align: center;
+    line-height: 40px;
+    opacity: 85%;
+}
+
+.dice-container {
+    max-width: 30rem;
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 30px;
+    margin: 90px auto;
+
+}
+
+.die-face {
+  justify-self: center;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+}
+
+.dot {
+    border: 4px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.pos1 {
+    top: 18%;
+    left: 18%;
+  }
+  
+.pos2 {
+  top: 18%;
+  left: 68%;
+}
+
+.pos3 {
+  top: 43%;
+  left: 18%;
+}
+
+.pos4 {
+  top: 43%;
+  left: 43%;
+}
+
+.pos5 {
+  top: 43%;
+  left: 68%;
+}
+
+.pos6 {
+  top: 68%;
+  left: 18%;
+}
+
+.pos7 {
+  top: 68%;
+  left: 68%;
+}
+
+.roll-btn {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.roll-btn:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+/* Leaderboard Panel */
+
+.leaderboard-container {
+  height: 80%;
+  width: 70%;
+  overflow-y: auto;
+  border-radius: 5px;
+  background-color: #0B2434;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.leaderboard-title {
+  color: #F5F5F5;
+  font-size: 2rem;
+}
+
+.score-username {
+  font-size: 1.3rem;
+}
+
+.score-date {
+  margin-top: -1rem;
+  font-size: 1rem;
+}
+
+.score {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  opacity: 75%;
+}
+
+/* Media Queries */
+
+@media (max-height: 750px) {
+  .game {
+    padding-top: 4rem;
+  }
+  .stats {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+  .play {
+    bottom: 10rem;
+    left: 0%;
+  }
+  .leaderboard {
+    bottom: 8rem;
+    left: 0%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .leaderboard-container {
+    width: 50%;
+    left: 25%;
+  }
+}
