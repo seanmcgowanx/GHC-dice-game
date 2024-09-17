@@ -43,7 +43,7 @@ yarn run dev
 1. Click the "Roll" button to roll the dice.
 2. Click on individual dice to hold them at their current value.
 3. Continue rolling until all dice show the same value.
-4. Your score is calculated based on the number of rolls and time taken to achieve Tenzies.
+4. Your score is calculated based on the number of rolls and time taken to complete the game.
 
 ## Features
 - Dynamic dice rolling and holding functionality.
@@ -54,14 +54,7 @@ yarn run dev
 
 ## Live Demo
 
-[click here]()
+[click here](https://ghc-dice-game.netlify.app)
 
-# React + Vite
 
-I used a template providing minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
