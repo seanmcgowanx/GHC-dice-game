@@ -1,7 +1,7 @@
-# Tenzies
+# Golden Hills Casino Dice Game
 
 ## Overview
-Tenzies is a simple dice game where the objective is to roll the dice until all of them show the same value. This repository contains the code for the web application implementing the game.
+Golden Hills Casino Dice Game is a simple dice game where the objective is to roll the dice until all of them show the same value. This repository contains the code for the web application implementing the game.
 
 ## Technologies Used
 - HTML
