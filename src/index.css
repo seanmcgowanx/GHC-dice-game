@@ -41,7 +41,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  align-items: center;
   margin-top: 10rem;
 }
 
@@ -123,12 +122,10 @@ nav {
   background-color: #123A54;
   color: #F5F5F5;
   flex-grow: 1;
-  height: 100%;
   text-align: center;
   padding: 50px;
   padding-top: 12rem;
   position: relative;
-  overflow: hidden;
 }
 
 .title {
@@ -151,7 +148,6 @@ nav {
     grid-template: auto auto / repeat(5, 1fr);
     gap: 30px;
     margin: 90px auto;
-
 }
 
 .die-face {
@@ -283,5 +279,74 @@ nav {
   .leaderboard-container {
     width: 50%;
     left: 25%;
+  }
+}
+
+@media (max-width: 815px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  nav {
+    height: 13rem;
+  }
+
+  .game {
+    padding: 10px;
+  }
+
+  .sign-in-btn {
+    width: 30%;
+    height:3rem;
+    top: 0%;
+    left: 10%;
+}
+
+  .start-btn {
+    width: 30%;
+    top: 4.5rem;
+    left: 10%;
+  }
+
+  .play {
+    bottom: 2rem;
+  }
+
+  .leaderboard {
+    bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .leaderboard::after {
+    bottom: 0;
+  }
+
+  .stats {
+    margin: 0;
+    margin-top: 4rem;
+    width: 50%;
+  }
+
+  .stat {
+    padding: 0;
+  }
+
+  .user-greeting {
+    padding: 0;
+    position: absolute;
+    left: 60%;
+    top: -40%;
+  }
+
+  .dice-container {
+    gap: 20px 0px;
+  }
+
+  .title {
+    font-size: 2rem;
+    padding: 0;
+    margin-top: 2rem;
   }
 }
