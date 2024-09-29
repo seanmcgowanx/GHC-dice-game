@@ -299,7 +299,7 @@ nav {
 
   .sign-in-btn {
     width: 30%;
-    height:3rem;
+    height: 3rem;
     top: 0%;
     left: 10%;
 }
@@ -352,5 +352,18 @@ nav {
 
   .instructions {
     margin-top: 2rem;
+  }
+}
+
+@media (max-height: 550px) {
+  main {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .game {
+    height: 30vh;
+    overflow: scroll;
   }
 }

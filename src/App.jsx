@@ -294,7 +294,8 @@ export default function App() {
             <div className="game">
                 {leaderboard && <Leaderboard highScores={highScores} displayDate={displayDate}/>}
                 {tenzies && play && <Confetti />}
-                {!play && !leaderboard && <h1 className="title">Golden Hills Casino Dice Game</h1>}
+                {!play && !leaderboard && <h1 className="title">Dice Dash</h1>}
+                {!play && !leaderboard && <img src="./dice-icon.jpg" alt="icon" width="200px"></img>}
                 {!play && !leaderboard && <p className="instructions">Roll until all dice are the same. 
                 Click each die to freeze at its current value on your first hand or between rolls.</p>}
                 {play && <div className="dice-container">
