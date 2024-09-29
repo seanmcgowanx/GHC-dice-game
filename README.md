@@ -1,7 +1,7 @@
 # Dice Dash
 
 ## Overview
-Dice Dash is a simple dice game where the objective is to roll the dice until all of them show the same value. This repository contains the code for the web application implementing the game.
+Dice Dash is a fun and interactive dice game built using React and Firestore. Players can roll dice, score points, and compete against others on a live leaderboard. With a focus on user experience, this app features Google authentication for seamless login, allowing players to track their progress and scores effortlessly.
 
 ## Technologies Used
 - Frontend: React
