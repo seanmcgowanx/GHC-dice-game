@@ -54,7 +54,7 @@ yarn run dev
 
 ## Live Demo
 
-[click here](https://ghc-dice-game.netlify.app)
+[click here](https://dicee-dashh.netlify.app)
 
 
 
