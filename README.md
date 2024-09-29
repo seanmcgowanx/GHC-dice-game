@@ -4,11 +4,9 @@
 Dice Dash is a simple dice game where the objective is to roll the dice until all of them show the same value. This repository contains the code for the web application implementing the game.
 
 ## Technologies Used
-- HTML
-- CSS
-- JavaScript (React)
-- Firebase Authentication
-- Firestore Database
+- Frontend: React
+- Backend: Firestore
+- Authentication: Firebase Authentication
 
 ## Files Included
 - `index.html`: The main HTML file containing the structure of the web page.
